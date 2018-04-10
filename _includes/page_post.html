@@ -1,0 +1,22 @@
+<section id="post-content">
+
+  <div class="content-section-a">
+      <div class="container">
+          <div class="row">
+            <div class="col-sm-12 text-center">
+              <h1>~ {{ page.title}} ~</h1>
+              <p>
+                <time datetime="{{ page.date | date_to_xmlschema }}" >
+                  {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                  {{ page.date | date: date_format }}
+                </time>
+              </p>
+              <hr>
+            </div>
+            <div class="post-content e-content" itemprop="articleBody">
+              {{ page.content }}
+            </div>
+      </div>
+  </div>
+
+</section>

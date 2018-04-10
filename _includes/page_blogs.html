@@ -1,0 +1,80 @@
+<section id="blogs">
+
+  <!-- Page Content -->
+  {% for post in paginator.posts %}
+
+    {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+      {% if thecycle == 'odd' %}
+      <div class="content-section-a">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-5 col-sm-6">
+                      <hr class="section-heading-spacer">
+                      <div class="clearfix"></div>
+                      <h2 class="section-heading">{{ post.title }}</h2>
+                        <div class="lead">{{ post.excerpt }}</div>
+                      <a href="{{ post.url }}">more...</a>
+                  </div>
+                  <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                      <img class="img-responsive img-rounded" src="{{ post.img }}" alt="">
+                  </div>
+              </div>
+          </div>
+      </div>
+      {% else %}
+      <div class="content-section-b">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                      <hr class="section-heading-spacer">
+                      <div class="clearfix"></div>
+                      <h2 class="section-heading">{{ post.title }}</h2>
+                      <div class="lead">{{ post.excerpt }}</div>
+                          <a href="{{ post.url }}">more...</a>
+                  </div>
+                  <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                    <img class="img-responsive img-rounded" src="{{ post.img }}" alt="">
+                  </div>
+              </div>
+          </div>
+
+      </div>
+      {% endif %}
+  {% endfor %}
+
+  <!-- Pagination links -->
+  {% if paginator.total_pages > 1 %}
+  <div class="content-section-a">
+      <div class="container">
+          <div class="row">
+            <div class="pagination">
+              {% if paginator.previous_page %}
+                <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+              {% else %}
+                <!-- <span>&laquo; Prev</span> -->
+              {% endif %}
+
+              {% for page in (1..paginator.total_pages) %}
+                {% if page == paginator.page %}
+                  <em>{{ page }}</em>
+                {% elsif page == 1 %}
+                  <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+                {% else %}
+                  <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+                {% endif %}
+              {% endfor %}
+
+              {% if paginator.next_page %}
+                <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+              {% else %}
+                <!-- <span>Next &raquo;</span> -->
+              {% endif %}
+            </div>
+          </div>
+        </div>
+  </div>
+
+  {% endif %}
+
+
+</section>
