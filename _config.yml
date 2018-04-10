@@ -12,7 +12,7 @@ description: > # "Write an awesome description for your new site here.
   description.
 copyright: 'Copyright &copy; 2018 Lashford.info. All Rights Reserved.'
 credits: 'Credits: ...'
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "/blog/" # the subpath of your site, e.g. /blog
 
 # ----------------------- #
 #    Jekyll & Plugins     #
