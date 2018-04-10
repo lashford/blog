@@ -18,10 +18,10 @@
                   <a class="page-scroll" href="#">Home</a>
               </li>
               <li>
-                  <a class="page-scroll" href="{{ blogs/page-1 | prepend: site.baseurl }}">Blogs</a>
+                  <a class="page-scroll" href="{{ "blogs/page-1" | prepend: site.baseurl }}">Blogs</a>
               </li>
               <li>
-                  <a class="page-scroll" href="{{ profile | prepend: site.baseurl }}">Profile</a>
+                  <a class="page-scroll" href="{{ "profile" | prepend: site.baseurl }}">Profile</a>
               </li>
             </ul>
         </div>
@@ -32,7 +32,7 @@
 
 <section id="home">
 <!-- Header -->
-	<div class="intro-header" style="background: url({{ page.img-bg }}) no-repeat center center; background-size: cover;">
+	<div class="intro-header" style="background: url({{ page.img-bg | prepend site.baseurl }}) no-repeat center center; background-size: cover;">
 
 		<div class="container">
 

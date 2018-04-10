@@ -13,10 +13,10 @@
                       <div class="clearfix"></div>
                       <h2 class="section-heading">{{ post.title }}</h2>
                         <div class="lead">{{ post.excerpt }}</div>
-                      <a href="{{ post.url }}">more...</a>
+                      <a href="{{ post.url  | prepend: site.baseurl }}">more...</a>
                   </div>
                   <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                      <img class="img-responsive img-rounded" src="{{ post.img }}" alt="">
+                      <img class="img-responsive img-rounded" src="{{ post.img | prepend: site.baseurl }}" alt="">
                   </div>
               </div>
           </div>
@@ -30,10 +30,10 @@
                       <div class="clearfix"></div>
                       <h2 class="section-heading">{{ post.title }}</h2>
                       <div class="lead">{{ post.excerpt }}</div>
-                          <a href="{{ post.url }}">more...</a>
+                          <a href="{{ post.url | prepend: site.baseurl }}">more...</a>
                   </div>
                   <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <img class="img-responsive img-rounded" src="{{ post.img }}" alt="">
+                    <img class="img-responsive img-rounded" src="{{ post.img | prepend: site.baseurl }}" alt="">
                   </div>
               </div>
           </div>
