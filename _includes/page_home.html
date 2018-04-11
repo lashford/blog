@@ -10,11 +10,11 @@
               <div class="col-lg-5 col-sm-6">
                   <h2 class="section-heading">{{ post.title }}</h2>
                     <div class="lead">{{ post.excerpt }}</div>
-                  <a href="{{ post.url | prepend: site.baseurl }}}}">more...</a>
+                  <a href="{{ post.url | prepend: site.baseurl }}">more...</a>
 
               </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive img-rounded" src="{{ post.img | prepend: site.baseurl }}}}" alt="">
+                    <img class="img-responsive img-rounded" src="{{ post.img | prepend: site.baseurl }}" alt="">
                 </div>
             </div>
         </div>
@@ -24,7 +24,7 @@
         <div class="container">
             <div class="row">
                 <h3 class="section-heading text-center">
-                  <a href="{{ blogs/page-1 | prepend: site.baseurl }}">See more posts...</a>
+                  <a href="{{ "blogs/page-1" | prepend: site.baseurl }}">See more posts...</a>
                 </h3>
             </div>
         </div>
