@@ -3,13 +3,11 @@
 # ----------------------- #
 
 url: http://lashford.info
-title: Lashford.info
+title: Relative Engineering
 email: alexlashford@gmail.com
 author: Alex Lashford
 description: > # "Write an awesome description for your new site here.
-  You can edit this line in _config.yml. It will appear in your document
-  head meta (for Google search results) and in your feed.xml site
-  description.
+  Relative Engineering is the profile and technology blog of Alex Lashford, Engineer . Leader . Pragmatist.
 copyright: 'Copyright &copy; 2018 Lashford.info.'
 credits: 'Images from deathtothestockphoto.com'
 baseurl: "/blog/" # the subpath of your site, e.g. /blog
