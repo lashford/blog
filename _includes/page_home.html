@@ -8,7 +8,7 @@
                 <hr/>
               </div>
               <div class="col-lg-5 col-sm-6">
-                <img class="img-responsive img-rounded" src="{{ post.img | prepend: site.baseurl }}" alt="">
+                <img class="img-responsive img-rounded" src="{{ post.img | prepend: site.url }}" alt="">
               </div>
               <div class="col-lg-5 col-lg-offset-2 col-sm-6">
                 <h2 class="section-heading">{{ post.postTitle }}</h2>
@@ -19,7 +19,7 @@
                   </time>
                 </p>
                 <div class="lead">{{ post.excerpt }}</div>
-                <a href="{{ post.url | prepend: site.baseurl }}">more...</a>
+                <a href="{{ post.url | prepend: site.url }}">more...</a>
               </div>
             </div>
         </div>
@@ -29,7 +29,7 @@
         <div class="container">
             <div class="row">
                 <h3 class="section-heading text-center">
-                  <a href="{{ "blogs" | prepend: site.baseurl }}">See more posts...</a>
+                  <a href="{{ "blogs" | prepend: site.url }}">See more posts...</a>
                 </h3>
             </div>
         </div>
