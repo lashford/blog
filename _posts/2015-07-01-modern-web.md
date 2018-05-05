@@ -2,8 +2,8 @@
 layout: post
 title: Relative Engineering Blog
 subTitle: A collection of ramblings, thoughts & code snippets
-img: img/posts/computer.png
-img-bg: img/wake-up-09.jpg
+img: /img/posts/computer.png
+img-bg: /img/wake-up-09.jpg
 category: blogs
 postTitle: Modern Web Application
 description: |
