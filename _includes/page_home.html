@@ -12,7 +12,13 @@
               </div>
               <div class="col-lg-5 col-lg-offset-2 col-sm-6">
                 <h2 class="section-heading">{{ post.postTitle }}</h2>
-                  <div class="lead">{{ post.excerpt }}</div>
+                <p>
+                  <time datetime="{{ page.date | date_to_xmlschema }}" >
+                    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                    {{ post.date | date: date_format }}
+                  </time>
+                </p>
+                <div class="lead">{{ post.excerpt }}</div>
                 <a href="{{ post.url | prepend: site.baseurl }}">more...</a>
               </div>
             </div>
