@@ -17,9 +17,8 @@ management app which gives a thin slice of Entity management, collecting data in
 
 So lets get down to it by seeing the overall structure of the application we are building.
 
-{:refdef: style="text-align: center;"}
-![Overall structure](https://raw.github.com/lashford/modern-web-template/master/tutorial/overview.png)
-{: refdef}
+
+![Overall structure](https://raw.github.com/lashford/modern-web-template/master/tutorial/overview.png){: class="img-responsive" style="margin: 0 auto;"}
 
 So now we know the components, lets see how they all fit together...
 
