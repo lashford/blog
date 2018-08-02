@@ -27,6 +27,12 @@ The site should be available at 127.0.0.1:4000.
 
 `jekyll serve` does hot folder watching so changes are automatically compiled for viewing in the browser.
 
+If you want to also see draft run the following command:
+
+```
+bundle exec jekyll serve --drafts
+```
+
 ### Adding a new post
 
 Posts are written in `kramdown` this is a superset of `markdown` go [here](https://kramdown.gettalong.org/syntax.html) for syntax and examples. Any Jekyll specific syntax is available [here](https://jekyllrb.com/docs/posts/)

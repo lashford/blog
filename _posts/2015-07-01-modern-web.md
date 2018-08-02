@@ -1,12 +1,10 @@
 ---
 layout: post
-title: Relative Engineering Blog
-subTitle: A collection of ramblings, thoughts & code snippets
 img: /img/posts/computer.png
 img-bg: /img/wake-up-09.jpg
 category: blogs
 postTitle: Modern Web Application
-description: |
+tags: [AngularJS, Scala, Play, MongoDB]
 ---
 
 This application shows how to build a 'modern' web application, comprising of a Client-side JavaScript App built using ``AngularJS`` wrote in ``CoffeeScript``, served from the ``Play 2 Framework`` and using document persistence with ``Reactive Mongo`` a non-blocking Scala client for ``MongoDB``.
