@@ -7,6 +7,11 @@
               <h1> {{ page.postTitle}} </h1>
               <br/>
               <p>
+                {% for tag in page.tags %}
+                  <span class="label label-default">{{tag}}</span>
+                {% endfor %}
+              </p>
+              <p>
                 <time datetime="{{ page.date | date_to_xmlschema }}" >
                   {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
                   {{ page.date | date: date_format }}
