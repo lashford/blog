@@ -5,6 +5,7 @@ img-bg: /img/wired-07.jpg
 category: blogs
 postTitle: Lightning Voting
 tags: [AngularJs, Bootstrap, Firebase]
+comments: true
 ---
 
 So it's 2014 and the buzzword of the year seems to be `Serverless`, having computation as a service or the ability to have a stateful application without the need to run and manage a backend server, sounds an interesting idea.  Just as the cloud has revolutionised how we deploy and build new systems, will `Serverless` give us the flexibility to quickly and effortlessly run code without the overhead of a server.
