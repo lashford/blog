@@ -5,6 +5,7 @@ img-bg: /img/wake-up-01.jpg
 category: blogs
 postTitle: Jenkins Pipeline With Dynamic User Input
 tags: [Jenkins, CI, Groovy]
+comments: true
 ---
 
 I am a big advocate of continuous integration and delivery, however there are times when you don't want an automatic release of an artifact to a given environment, for example; perhaps you are doing a specific long running performance test, or you need to manually ensure a specific new feature is ready in the sales or demo environment.  Can these parameters be loaded dynamically, let's find out...

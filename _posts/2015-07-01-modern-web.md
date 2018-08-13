@@ -5,6 +5,7 @@ img-bg: /img/wake-up-09.jpg
 category: blogs
 postTitle: Modern Web Application
 tags: [AngularJS, Scala, Play, MongoDB]
+comments: true
 ---
 
 This application shows how to build a 'modern' web application, comprising of a Client-side JavaScript App built using ``AngularJS`` wrote in ``CoffeeScript``, served from the ``Play 2 Framework`` and using document persistence with ``Reactive Mongo`` a non-blocking Scala client for ``MongoDB``.
