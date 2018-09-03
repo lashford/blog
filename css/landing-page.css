@@ -113,6 +113,11 @@ h6 {
     margin-bottom: 20px;
 }
 
+.section-heading a {
+    color: inherit;
+    text-decoration: none;
+}
+
 .section-sub-heading {
     margin-bottom: 30px;
     font: italic bold 1.2em "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
