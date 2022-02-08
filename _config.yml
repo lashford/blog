@@ -2,14 +2,14 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://www.lashford.info
+url: https://www.lashford.dev
 title: Relative Engineering
 subTitle: A collection of ramblings, thoughts & code snippets
 email: alexlashford@gmail.com
 author: Alex Lashford
 description: > # "Write an awesome description for your new site here.
   Relative Engineering is the profile and technology blog of Alex Lashford, Engineer . Leader . Pragmatist.
-copyright: 'Copyright &copy; 2018 Lashford.info.'
+copyright: 'Copyright &copy; 2022 Lashford.dev.'
 credits: 'Images from deathtothestockphoto.com'
 #baseurl: "/" # the subpath of your site, e.g. /blog
 
